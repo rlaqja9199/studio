@@ -1,0 +1,165 @@
+h1 {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 600;
+    font-size: 44px;
+    color: #0f403f;
+    text-shadow: 1px 1px 3px #444;
+}
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 5% 0 5%;
+    background-color: #fff;
+    z-index: 100;
+}
+#hMenu {
+    display: flex;
+}
+#hMenu #hProfile {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin: 3.5px 14px;
+    border: 2px solid #0f403f;
+}
+#hMenu #hProfile img{
+    width: 100%;
+    border-radius: 50%;
+}
+#hBurgerTab {
+    width: 56px;
+    height: 56px;
+    background-color: #0f403f;
+    padding: 18px 10.5px;
+    z-index: 100;
+    cursor: pointer;
+}
+#hBurgerTab:hover {
+    background-color: #8879B0;
+    transition: 0.3s;
+}
+#hBurgerTab div{
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    transition: 0.4s;
+}
+#hBurgerTab div:nth-child(1){
+    width: 35px;
+}
+#hBurgerTab div:nth-child(2){
+    width: 28px;
+}
+#hBurgerTab div:nth-child(3){
+    width: 21px;
+}
+#hBurgerTab:hover div:nth-child(2){
+    width: 35px;
+    transition: 0.2s;
+}
+/* #hBurgerTab:hover div:nth-child(3){
+    width: 35px;
+    transition: 0.3s;
+} */
+#hMenuList{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #377D71;
+    right: 0;
+    transition: 1s;
+    color: #fff;
+}
+#hMenuList>li:nth-child(1){
+    width: 50%;
+    height: 100%;
+    transition: 0.4s;
+    overflow: hidden;
+    position: relative;
+}
+#hMenuList>li:nth-child(1) img{
+    position: absolute;
+    top: -0%;
+    width: 100%;
+    height: 100%;
+    /* height: 100vh; */
+}
+#hMenuList>li:nth-child(2){
+    width: 50%;
+}
+#listTab{
+    width: 100%;
+    height: 100%;
+    padding: 15% 10%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+#listTab li{
+    height: 15%;
+    width: 100%;
+}
+#listTab li p{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-family: 'Calligraffitti', cursive;
+}
+#listTab li span{
+    font-size: 18px;
+    font-weight: 600;
+}
+#listTab li:nth-child(3){
+    margin-bottom: 10%;
+}
+#listTab li:nth-child(4){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: end;
+    padding-right: 10%;
+}
+#listTab h1{
+    font-size: 32px;
+}
+#menuX {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 3%;
+    top: 5%;
+    z-index: 10;
+    transition: 0.5s;
+}
+#menuX:hover {
+    transform: rotate(90deg);
+}
+#menuX::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+#menuX::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}

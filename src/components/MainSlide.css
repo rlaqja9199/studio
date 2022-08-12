@@ -1,0 +1,28 @@
+#mainSlide{
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    /* background-color: #fff; */
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-60%) scale(1);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.1,0.7,0.3,0.8);
+}
+#mainSlide img{
+    width: 105%;
+}
+.slick-prev {
+    left: 0 !important;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+.slick-next {
+    right: 0 !important;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
