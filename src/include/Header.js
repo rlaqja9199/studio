@@ -16,10 +16,7 @@ const Header = () => {
   return (
     <header>
         <h1 id='hLogo'><a href="/">Own_studiO</a></h1>
-        <div id='hMenu'>
-            <div id='hProfile'>     
-                <img src='./images/unknown-icon.jpg' alt='' />
-            </div>
+        <div id='hMenu'>g
             <div id='hBurgerTab' onClick={clickBTab}>
                 <div></div>
                 <div></div>
