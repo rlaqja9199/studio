@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header>
         <h1 id='hLogo'><a href="/">Own_studiO</a></h1>
-        <div id='hMenu'>g
+        <div id='hMenu'>
             <div id='hBurgerTab' onClick={clickBTab}>
                 <div></div>
                 <div></div>

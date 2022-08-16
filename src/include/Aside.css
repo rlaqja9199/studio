@@ -1,0 +1,24 @@
+#sideScroll{
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    right: 30px;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+
+}
+#scrollWhite {
+    width: 2px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+}
+#scrollWine {
+    width: 2px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.4s;
+
+}
