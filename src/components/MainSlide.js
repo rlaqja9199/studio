@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./MainSlide.css"
-import DotWave from '../dotwave/DotWave';
 
 const MainSlide = () => {
   const [slideSize, setSlideSize] = useState(1);
@@ -13,9 +12,6 @@ const MainSlide = () => {
 
   useEffect(()=>{
     window.addEventListener('wheel',(e)=>{
-      if(wheelLocation>16){
-
-      }
       if(e.deltaY>0){
         if(slideSize>=1.2){
           setslideCursor('pointer');
@@ -49,7 +45,7 @@ const MainSlide = () => {
   };
   return (
     <div id='mainSlide' style={{transform: `translate(-50%,-50%) scale(${slideSize})`, cursor: slideCursor}}>
-        <Slider {...settings}>
+      <Slider {...settings}>
         <div className='slide'>
           <img src='/images/14.jpg' alt='' />
         </div>
@@ -86,8 +82,8 @@ const MainSlide = () => {
         <div className='slide'>
           <img src='/images/21.jpg' alt='' />
         </div>
-    </Slider>
-      </div>
+      </Slider>
+    </div>
   )
 }
 

@@ -15,11 +15,17 @@ const Aside = () => {
                 console.log(wheelLocation);
               }
             }
-            if(wheelLocation>30){
+            if(wheelLocation>46){
+              setScrollWineHeight(50);
+            }else if(wheelLocation>39){
+              setScrollWineHeight(40);
+            }else if(wheelLocation>32){
+              setScrollWineHeight(30);
+            }else if(wheelLocation>25){
               setScrollWineHeight(20);
-            }else if(wheelLocation>20){
+            }else if(wheelLocation>18){
                 setScrollWineHeight(10);
-            }else if(wheelLocation<=20){
+            }else if(wheelLocation<=18){
                 setScrollWineHeight(0);
               }
           })

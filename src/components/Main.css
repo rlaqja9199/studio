@@ -1,3 +1,8 @@
+span {
+    text-shadow: 2px 2px 3px #555;
+}
+
+
 #mainPage{
     width: 100%;
     height: 100vh;
@@ -43,7 +48,7 @@
 }
 #profileImg img{
     width: 95%;
-    transition: 0.5s 0.4s;
+    transition: 0.5s 0.3s;
 }
 #profileBg {
     width: 100%;
@@ -56,9 +61,10 @@
     color: #fff;
     font-size: 36px;
     position: absolute;
-    top: 40%;
-    right: 10%;
-
+    right: 15%;
+    transition: 0.8s 0.3s;
+    text-align: center;
+    line-height: 1.6;
 }
 
 
@@ -81,21 +87,152 @@
 }
 #personalProfile img{
     width: 100%;
-    transition: 0.5s 0.4s;
+    transition: 0.5s 0.3s;
 }
 #pProfileBg{
+    width: 100%;
+    height: 100vh;
+    background-color: #a11826;
+    position: absolute;
+    left: 0;
+}
+#pProfileBg p{
+    color:  #FFE7BF;
+    font-size: 36px;
+    position: absolute;
+    left: 15%;
+    text-align: center;
+    transition: 0.8s 0.3s;
+    line-height: 1.6;
+    
+}
+
+
+
+/* 페이지4 */
+
+#page4 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 0.8s;
+    margin-top: 83px;
+}
+#familyPhoto {
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+#familyPhoto img{
+    width: 95%;
+    transition: 0.5s 0.3s;
+}
+#fPhotoBg {
+    width: 100%;
+    height: 100vh;
+    background-color:#FFD9C0;
+    position: absolute;
+    right: 0;
+}
+#fPhotoBg p{
+    color:  #8CC0DE;
+    font-size: 36px;
+    position: absolute;
+    right: 15%;
+    transition: 0.8s 0.3s;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+
+/* 페이지5 */
+
+#page5 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 0.8s;
+    margin-top: 83px;
+}
+#babyPhoto {
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+#babyPhoto img{
+    width: 100%;
+    transition: 0.5s 0.3s;
+}
+#bPhotoBg{
     width: 100%;
     height: 100vh;
     background-color:#F9F5E5;
     position: absolute;
     left: 0;
 }
-#pProfileBg p{
+#bPhotoBg p{
     color:  #AA9A8A;
     font-size: 36px;
     position: absolute;
-    top: 40%;
-    left: 10%;
-
+    left: 15%;
+    text-align: center;
+    transition: 0.8s 0.3s;
+    line-height: 1.6;
 }
 
+
+/* 페이지6 */
+
+#page6 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 0.8s;
+    margin-top: 83px;
+}
+#friendPhoto {
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+#friendPhoto img{
+    width: 95%;
+    transition: 0.5s 0.3s;
+}
+#frPhotoBg {
+    width: 100%;
+    height: 100vh;
+    background-color: #570a0a;
+    position: absolute;
+    right: 0;
+}
+#frPhotoBg p{
+    color: #eee;
+    font-size: 36px;
+    position: absolute;
+    right: 15%;
+    transition: 0.8s 0.3s;
+    text-align: center;
+    line-height: 1.6;
+}
+#pageLogo{
+    font-family: 'Calligraffitti', cursive;
+    color: #eee;
+    font-size: 36px;
+    position: absolute;
+    right: 15%;
+    top: 60%;
+    transition: 0.8s;
+    text-align: center;
+    line-height: 1.6;
+}
